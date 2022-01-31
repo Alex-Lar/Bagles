@@ -13,7 +13,7 @@ function main() {
     alert('Число загадано. У тебя только 10 попыток!');
     while (gameOver) {
         while (guessNum !== secretNum && gameRound <= 10) {
-            guessNum = prompt(`Раунд #${gameRound}. --${secretNum}`, '');
+            guessNum = prompt(`Раунд #${gameRound}.`, '');
 
             let clues = getClues(secretNum, guessNum);
 
